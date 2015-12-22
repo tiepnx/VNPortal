@@ -1,0 +1,8 @@
+﻿http://www.davepaquette.com/archive/2014/10/08/how-to-use-gulp-in-visual-studio.aspx
+step 1:
+npm install gulp -g
+step 2:
+npm install gulp --save-dev
+npm install gulp-concat --save-dev
+npm install gulp-uglify --save-dev
+npm install del --save-dev

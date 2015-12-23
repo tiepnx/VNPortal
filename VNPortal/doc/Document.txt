@@ -1,4 +1,7 @@
-﻿http://www.davepaquette.com/archive/2014/10/08/how-to-use-gulp-in-visual-studio.aspx
+﻿error when register account with entity
+remove the EntityFramework.dll from this folder C:\Windows\Microsoft.NET\assembly\GAC_MSIL\EntityFramework
+
+http://www.davepaquette.com/archive/2014/10/08/how-to-use-gulp-in-visual-studio.aspx
 step 1:
 npm install gulp -g
 step 2:

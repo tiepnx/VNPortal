@@ -82,12 +82,12 @@ namespace VNPortal
             //app.UseFacebookAuthentication(
             //    appId: "",
             //    appSecret: "");
-
-            //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
-            //{
-            //    ClientId = "",
-            //    ClientSecret = ""
-            //});
+            //http://www.asp.net/mvc/overview/security/create-an-aspnet-mvc-5-app-with-facebook-and-google-oauth2-and-openid-sign-on
+            app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
+            {
+                ClientId = "918963649056-utt1foften0ojanpbbdg24v6ake0pbhs.apps.googleusercontent.com",
+                ClientSecret = "8wdxKtteDAWoJ8dn73YXINy3"
+            });
         }
     }
 }

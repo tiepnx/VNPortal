@@ -270,6 +270,16 @@
     <Content Include="gulpfile.js" />
     <Content Include="Scripts\ai.0.15.0-build58334.js" />
     <Content Include="Scripts\ai.0.15.0-build58334.min.js" />
+    <Content Include="Scripts\apps\giapha\app.js" />
+    <Content Include="Scripts\apps\giapha\config.js" />
+    <Content Include="Scripts\apps\giapha\constant.js" />
+    <Content Include="Scripts\apps\giapha\controller.js" />
+    <Content Include="Scripts\apps\giapha\directive.js" />
+    <Content Include="Scripts\apps\giapha\doc\linkReferent.txt" />
+    <Content Include="Scripts\apps\giapha\httpService.js" />
+    <Content Include="Scripts\apps\giapha\init.js" />
+    <Content Include="Scripts\apps\giapha\service.js" />
+    <Content Include="Scripts\apps\init.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Areas\HelpPage\Views\Web.config" />
@@ -308,11 +318,6 @@
     <Content Include="Scripts\sammy-0.7.4.js" />
     <Content Include="Scripts\sammy-0.7.4.min.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="Scripts\app\_run.js" />
-    <Content Include="Scripts\app\app.datamodel.js" />
-    <Content Include="Scripts\app\app.viewmodel.js" />
-    <Content Include="Scripts\app\common.js" />
-    <Content Include="Scripts\app\home.viewmodel.js" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Account\ConfirmEmail.cshtml" />
     <Content Include="Views\Account\ExternalLoginConfirmation.cshtml" />
@@ -353,6 +358,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Scripts\libs\angular\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

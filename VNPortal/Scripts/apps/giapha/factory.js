@@ -1,14 +1,14 @@
 ﻿'use strict';
 (function (define, angular) {
-    var setting = nift_app_setting;
+    var setting = T5;
     window.angular.module(setting.name)
         .factory('logger', logger)
         .factory('exception', exception)
-        .factory(setting.service.global(), globalServiceFn)
-        .factory(setting.service.start(), startServiceFn);
+        .factory(setting.factorys.global, globalServiceFn)
+        .factory(setting.factorys.start, startServiceFn);
     logger.$inject = ['$log', 'toastr'];
     exception.$inject = ['logger'];
-    startServiceFn.$inject = ['$http', '$q', setting.service.httpService(), setting.constant];
+    startServiceFn.$inject = ['$http', '$q', setting.services.httpService, setting.constants.api];
     
     function logger($log, toastr) {
         var service = {

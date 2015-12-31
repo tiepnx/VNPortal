@@ -242,6 +242,7 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\FamilyController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\MeController.cs" />
@@ -278,7 +279,9 @@
     <Content Include="Scripts\apps\giapha\doc\linkReferent.txt" />
     <Content Include="Scripts\apps\giapha\httpService.js" />
     <Content Include="Scripts\apps\giapha\init.js" />
-    <Content Include="Scripts\apps\giapha\service.js" />
+    <Content Include="Scripts\apps\giapha\factory.js" />
+    <Content Include="Scripts\apps\giapha\partials\dashboard.html" />
+    <Content Include="Scripts\apps\giapha\partials\header.html" />
     <Content Include="Scripts\apps\init.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -312,6 +315,37 @@
     <Content Include="Scripts\knockout-2.3.0.js" />
     <Content Include="Scripts\knockout.validation.debug.js" />
     <Content Include="Scripts\knockout.validation.js" />
+    <Content Include="Scripts\libs\angular\angular-animate.js" />
+    <Content Include="Scripts\libs\angular\angular-animate.min.js" />
+    <Content Include="Scripts\libs\angular\angular-aria.js" />
+    <Content Include="Scripts\libs\angular\angular-aria.min.js" />
+    <Content Include="Scripts\libs\angular\angular-cookies.js" />
+    <Content Include="Scripts\libs\angular\angular-cookies.min.js" />
+    <Content Include="Scripts\libs\angular\angular-csp.css" />
+    <Content Include="Scripts\libs\angular\angular-loader.js" />
+    <Content Include="Scripts\libs\angular\angular-loader.min.js" />
+    <Content Include="Scripts\libs\angular\angular-message-format.js" />
+    <Content Include="Scripts\libs\angular\angular-message-format.min.js" />
+    <Content Include="Scripts\libs\angular\angular-messages.js" />
+    <Content Include="Scripts\libs\angular\angular-messages.min.js" />
+    <Content Include="Scripts\libs\angular\angular-mocks.js" />
+    <Content Include="Scripts\libs\angular\angular-resource.js" />
+    <Content Include="Scripts\libs\angular\angular-resource.min.js" />
+    <Content Include="Scripts\libs\angular\angular-route.js" />
+    <Content Include="Scripts\libs\angular\angular-route.min.js" />
+    <Content Include="Scripts\libs\angular\angular-sanitize.js" />
+    <Content Include="Scripts\libs\angular\angular-sanitize.min.js" />
+    <Content Include="Scripts\libs\angular\angular-scenario.js" />
+    <Content Include="Scripts\libs\angular\angular-touch.js" />
+    <Content Include="Scripts\libs\angular\angular-touch.min.js" />
+    <Content Include="Scripts\libs\angular\angular-ui-router.js" />
+    <Content Include="Scripts\libs\angular\angular-ui-router.min.js" />
+    <Content Include="Scripts\libs\angular\angular-ui-router\angular-ui-router.js" />
+    <Content Include="Scripts\libs\angular\angular-ui-router\angular-ui-router.min.js" />
+    <Content Include="Scripts\libs\angular\angular.js" />
+    <Content Include="Scripts\libs\angular\angular.min.js" />
+    <Content Include="Scripts\libs\toastr\toastr.css" />
+    <Content Include="Scripts\libs\toastr\toastr.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
@@ -355,10 +389,22 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
+    <Content Include="Views\Family\index.cshtml" />
+    <Content Include="Scripts\libs\angular\angular-animate.min.js.map" />
+    <Content Include="Scripts\libs\angular\angular-aria.min.js.map" />
+    <Content Include="Scripts\libs\angular\angular-cookies.min.js.map" />
+    <Content Include="Scripts\libs\angular\angular-loader.min.js.map" />
+    <Content Include="Scripts\libs\angular\angular-message-format.min.js.map" />
+    <Content Include="Scripts\libs\angular\angular-messages.min.js.map" />
+    <Content Include="Scripts\libs\angular\angular-resource.min.js.map" />
+    <Content Include="Scripts\libs\angular\angular-route.min.js.map" />
+    <Content Include="Scripts\libs\angular\angular-sanitize.min.js.map" />
+    <Content Include="Scripts\libs\angular\angular-touch.min.js.map" />
+    <Content Include="Scripts\libs\angular\angular.min.js.map" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Scripts\libs\angular\" />
+    <Folder Include="bin\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

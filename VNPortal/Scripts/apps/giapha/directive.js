@@ -1,8 +1,8 @@
 ﻿(function (define, angular) {
-    var setting = nift_app_setting;
+    var setting = T5;
     window.angular.module(setting.name)
-        .directive(setting.directive.dtPicker, dtPickerDr);
-    dtPickerDr.$inject = ['$timeout', 'logger', setting.service.global()];
+        .directive(setting.directives.dtPicker, dtPickerDr);
+    dtPickerDr.$inject = ['$timeout', 'logger', setting.factorys.global];
     
     function dtPickerDr($timeout, logger) {
         return {

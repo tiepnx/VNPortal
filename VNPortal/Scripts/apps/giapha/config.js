@@ -1,5 +1,6 @@
-﻿(function (define, angular) {
-    var setting = nift_app_setting;
+﻿'use strict';
+(function (define, angular) {
+    var setting = T5;
     window.angular.module(setting.name)
         .config(configure)
         .config(exceptionConfig);
@@ -35,29 +36,29 @@
                 url: '/',
                 views: {
                     'header': {
-                        templateUrl: setting.partial.header(setting.version),
-                        controller: setting.controller.headerasvm()
+                        templateUrl: setting.partials.header(),
+                        controller: setting.controllers.header + " as vm"
                     },
                     'content': {
-                        templateUrl: setting.partial.start(setting.version),
-                        controller: setting.controller.startasvm()
+                        templateUrl: setting.partials.dashboard(),
+                        controller: setting.controllers.start + " as vm"
                     }
                 }
-            })
-            .state(routes.app + '.' + routes.main, {
-                url: routes.main,
-                views: {
-                    'header@': {
-                        templateUrl: setting.partial.header(setting.version),
-                        controller: setting.controller.headerasvm()
-                    },
-                    'content@': {
-                        templateUrl: setting.partial.main(setting.version),
-                        controller: setting.controller.mainasvm()
-                    }
-                }
-
             });
+            //.state(routes.app + '.' + routes.main, {
+            //    url: routes.main,
+            //    views: {
+            //        'header@': {
+            //            templateUrl: setting.partials.header(),
+            //            controller: setting.controllers.header + " as vm"
+            //        },
+            //        'content@': {
+            //            templateUrl: setting.partials.dashboard(),
+            //            controller: setting.controllers.start + " as vm"
+            //        }
+            //    }
+
+            //});
         //$urlRouterProvider.otherwise('/' + routes.start);
         $urlRouterProvider.otherwise('/');
     };

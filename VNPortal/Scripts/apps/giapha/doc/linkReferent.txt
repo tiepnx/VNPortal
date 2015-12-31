@@ -1,1 +1,4 @@
 ﻿https://developers.google.com/chart/interactive/docs/gallery/orgchart#example
+http://gojs.net/latest/samples/orgChartEditor.html
+https://scotch.io/tutorials/angular-routing-using-ui-router
+https://github.com/angular-ui/ui-router/wiki/Multiple-Named-Views#view-names---relative-vs-absolute-names

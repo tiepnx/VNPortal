@@ -1,35 +1,29 @@
-﻿(function (define, angular) {
-    var setting = nift_app_setting;
+﻿'use strict';
+(function (define, angular) {
+    var setting = T5;
     window.angular.module(setting.name)
-        .controller(setting.controller.header(), headerCtr)
-        .controller(setting.controller.start(), startCtr)
-        .controller(setting.controller.main(), mainCtr);
-    headerCtr.$inject = ['$sce', '$state', '$timeout', 'logger', setting.service.global()];
-    startCtr.$inject = ['$scope', '$state', '$timeout', 'logger', setting.routes, setting.service.global(), setting.service.start()];
-    mainCtr.$inject = ['$scope', '$sce', '$state', '$timeout', 'logger', setting.routes, setting.service.global()];
+        .controller(setting.controllers.header, headerCtr)
+        .controller(setting.controllers.start, startCtr)
+        .controller(setting.controllers.main, mainCtr);
+    headerCtr.$inject = ['$sce', '$state', '$timeout', 'logger', setting.factorys.global];
+    startCtr.$inject = ['$scope', '$state', '$timeout', 'logger', setting.routes, setting.factorys.global, setting.factorys.start];
+    mainCtr.$inject = ['$scope', '$sce', '$state', '$timeout', 'logger', setting.routes, setting.factorys.global];
     function headerCtr($sce, $state, $timeout, logger, globalService) {
         var vm = this;
-        vm.globalData = globalService.data;
-        vm.fn = {
-            renderBreadcrumbs: renderBreadcrumbs,
-        }
-        function fnInit() {
+        //vm.globalData = globalService.data;
+        //vm.fn = {
+        //    renderBreadcrumbs: renderBreadcrumbs,
+        //}
+        //function fnInit() {
             
-        }
-        function renderBreadcrumbs() {
-            return $sce.trustAsHtml(globalService.data.headerNavText);
-        }
+        //}
+        //function renderBreadcrumbs() {
+        //    return $sce.trustAsHtml(globalService.data.headerNavText);
+        //}
     }
-    function startCtr($scope, $state, $timeout, logger, routes, globalService, startService) {
+    function startCtr($scope, $state, $timeout, logger, routes, global) {
         var vm = this;
-        /*properties*/
-        vm.globalData = null;
-        vm.data = {
-            selectedYear: null,
-            selectedAffiliate: null,
-        }
-        vm.isReady = false;
-        /*method*/
+     
         vm.fn = {
             fnInit: fnInit,
             fnGetAffiliates: fnGetAffiliates,

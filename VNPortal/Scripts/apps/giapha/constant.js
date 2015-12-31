@@ -1,8 +1,9 @@
+'use strict';
 (function (define, angular) {
-    var setting = nift_app_setting;
+    var setting = T5;
     window.angular.module(setting.name, setting.dependencies)
         .constant('toastr', toastr)
-        .constant(setting.constant, {
+        .constant(setting.constants.api, {
             GetActivedYears: setting.apiUrl + 'GetActivedYears',
             getAffiliates: setting.apiUrl + 'GetAffiliates',
             createSurvey: setting.apiUrl + + 'CreateSurvey',

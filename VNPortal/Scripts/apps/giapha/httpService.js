@@ -1,8 +1,8 @@
 ﻿(function (define, angular) {
     /* http://www.tutorialspoint.com/angularjs/angularjs_services.htm */
-    var setting = nift_app_setting;
+    var setting = T5;
     window.angular.module(setting.name)
-        .service(setting.service.httpService(), httpServiceFn);
+        .service(setting.services.httpService, httpServiceFn);
     httpServiceFn.$inject = ['$http', '$q'];
     function httpServiceFn($http, $q) {
         return {

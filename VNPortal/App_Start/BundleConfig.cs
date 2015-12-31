@@ -29,6 +29,11 @@ namespace VNPortal
                 "~/Scripts/app/home.viewmodel.js",
                 "~/Scripts/app/_run.js"));
 
+            bundles.Add(new ScriptBundle("~/bundles/angular").Include(
+                "~/Scripts/libs/angular/angular.min.js",
+                "~/Scripts/libs/angular/angular-ui-router/angular-ui-router.min.js"));
+            bundles.Add(new ScriptBundle("~/bundles/toastr").Include(
+                "~/Scripts/libs/toastr/toastr.min.js")); 
             // Use the development version of Modernizr to develop with and learn from. Then, when you're
             // ready for production, use the build tool at http://modernizr.com to pick only the tests you need.
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
@@ -38,9 +43,11 @@ namespace VNPortal
                 "~/Scripts/bootstrap.js",
                 "~/Scripts/respond.js"));
 
+
             bundles.Add(new StyleBundle("~/Content/css").Include(
                  "~/Content/bootstrap.css",
-                 "~/Content/Site.css"));
+                 "~/Content/Site.css",
+                 "~/Scripts/libs/toastr/toastr.css"));
         }
     }
 }

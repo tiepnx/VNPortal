@@ -1,12 +1,12 @@
 ﻿'use strict';
 (function (define, angular) {
     var setting = T5;
-    window.angular.module(setting.name)
-        .config(configure)
+    angular.module(setting.name)
+        //.config(configure)
         .config(exceptionConfig);
     exceptionConfig.$inject = ['$provide'];
     extendExceptionHandler.$inject = ['$delegate', 'toastr'];
-    configure.$inject = ['$stateProvider', '$urlRouterProvider', 'toastr', setting.routes];
+    //configure.$inject = ['$stateProvider', '$urlRouterProvider', 'toastr', setting.routes];
     function exceptionConfig($provide) {
         $provide.decorator('$exceptionHandler', extendExceptionHandler);
     }

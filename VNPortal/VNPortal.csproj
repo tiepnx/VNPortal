@@ -271,11 +271,13 @@
     <Content Include="gulpfile.js" />
     <Content Include="Scripts\ai.0.15.0-build58334.js" />
     <Content Include="Scripts\ai.0.15.0-build58334.min.js" />
+    <Content Include="Scripts\apps\directives\orgchar.js" />
     <Content Include="Scripts\apps\giapha\app.js" />
     <Content Include="Scripts\apps\giapha\config.js" />
     <Content Include="Scripts\apps\giapha\constant.js" />
     <Content Include="Scripts\apps\giapha\controller.js" />
     <Content Include="Scripts\apps\giapha\directive.js" />
+    <Content Include="Scripts\apps\giapha\doc\example-google.html" />
     <Content Include="Scripts\apps\giapha\doc\linkReferent.txt" />
     <Content Include="Scripts\apps\giapha\httpService.js" />
     <Content Include="Scripts\apps\giapha\init.js" />

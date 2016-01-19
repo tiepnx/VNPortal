@@ -1,7 +1,7 @@
 ﻿(function (define, angular) {
     /* http://www.tutorialspoint.com/angularjs/angularjs_services.htm */
     var setting = T5;
-    window.angular.module(setting.name)
+    angular.module(setting.name)
         .service(setting.services.httpService, httpServiceFn);
     httpServiceFn.$inject = ['$http', '$q'];
     function httpServiceFn($http, $q) {

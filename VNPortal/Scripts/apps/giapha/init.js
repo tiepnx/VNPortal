@@ -13,6 +13,7 @@ T5 = angular.extend(T5, {
     },
     directives: {
         dtPicker: T5.namespace + '.dtPicker',
+        orgchart: 'orgchart'
     },
     services: {
         httpService: T5.namespace + ".httpService",

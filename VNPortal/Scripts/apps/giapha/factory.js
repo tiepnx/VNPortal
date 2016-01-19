@@ -1,7 +1,7 @@
 ﻿'use strict';
 (function (define, angular) {
     var setting = T5;
-    window.angular.module(setting.name)
+    angular.module(setting.name)
         .factory('logger', logger)
         .factory('exception', exception)
         .factory(setting.factorys.global, globalServiceFn)

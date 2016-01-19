@@ -1,7 +1,7 @@
 'use strict';
 (function (define, angular) {
     var setting = T5;
-    window.angular.module(setting.name, setting.dependencies)
+    angular.module(setting.name, setting.dependencies)
         .constant('toastr', toastr)
         .constant(setting.constants.api, {
             GetActivedYears: setting.apiUrl + 'GetActivedYears',
